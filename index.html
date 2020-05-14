@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<div class="container">
+        <h1>Counter</h1>
+        <h2 id="number">0</h2>
+       <div id="count">
+          <button onclick='plusNumber()'>+</button>
+          <button onclick='minusNumber()'>-</button>
+      </div>
+  </div>
+  <style>
+    .container {
+      font-family:Tahoma;
+      width:200px;
+      height:130px;
+      text-align:center;
+      background-color:blue;
+      color:white;
+      border-radius:4px;
+    }
+    h1{
+      margin-bottom:0px;
+    }
+    h2 {
+      padding-top:10px;
+      padding-bottom:10px;
+      margin-top:0px;
+      margin-bottom:0px
+    }
+    .negativeNumbers {
+      padding-top:10px;
+      padding-bottom:10px;
+      margin-top:0px;
+      margin-bottom:0px
+        color:red;
+    }
+    button {
+      background-color:white;
+      font-size:1em;
+      color:blue;
+      width:35px;
+      height:35px;
+    }
+  </style>
+  <script>
+    var initialNumber = 0;
+    function plusNumber() {
+        initialNumber++;
+        document.querySelector("#number").innerHTML=initialNumber;
+      return (initialNumber);
+    }
+    function minusNumber() {
+      initialNumber--;
+        document.querySelector("#number").innerHTML=initialNumber;
+      return (initialNumber);
+    }
+  </script>
+  
+  </body>
+</html>
